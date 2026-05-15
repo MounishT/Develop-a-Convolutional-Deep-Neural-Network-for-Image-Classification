@@ -38,9 +38,9 @@ Predict and display the class of a single test image.
 
 ## PROGRAM
 
-### Name:ARCHANA T
+### Name:T Mounish
 
-### Register Number:212223240013
+### Register Number:212223240098
 
 ```python
 import torch
@@ -179,8 +179,8 @@ def predict_image(model, image_index, dataset):
     class_names = dataset.classes
 
     # Display the image
-    print('Name: ARCHANA T')
-    print('Register Number:212223240013')
+    print('Name:T Mounish')
+    print('Register Number:212223240098')
     plt.imshow(image.squeeze(), cmap="gray")
     plt.title(f'Actual: {class_names[label]}\nPredicted: {class_names[predicted.item()]}')
     plt.axis("off")
@@ -193,19 +193,19 @@ predict_image(model, image_index=250, dataset=test_dataset)
 ### OUTPUT
 
 ## Training Loss per Epoch
-<img width="255" height="150" alt="image" src="https://github.com/user-attachments/assets/eb303caa-1aa4-4177-9517-ecc372239e6b" />
+<img width="412" height="227" alt="image" src="https://github.com/user-attachments/assets/116588d4-12e6-413f-bcac-954d4307a6e6" />
 
 
 ## Confusion Matrix
-<img width="702" height="575" alt="image" src="https://github.com/user-attachments/assets/e6de163c-c1c3-4f8e-a134-46a817afe992" />
+<img width="702" height="722" alt="image" src="https://github.com/user-attachments/assets/e2becbe1-def3-41dc-8171-903965459509" />
 
 
 ## Classification Report
-<img width="450" height="293" alt="image" src="https://github.com/user-attachments/assets/a7262dfa-4084-4d66-a539-476545f261f7" />
+<img width="606" height="467" alt="image" src="https://github.com/user-attachments/assets/88e73d13-ad29-4653-a636-dd651c284e21" />
 
 
 ### New Sample Data Prediction
-<img width="482" height="425" alt="image" src="https://github.com/user-attachments/assets/1cf09146-efba-45ff-abbb-1cdec2d2e97f" />
+<img width="552" height="665" alt="image" src="https://github.com/user-attachments/assets/15af9bab-ca91-4741-896e-9e330a2e380c" />
 
 
 ## RESULT
