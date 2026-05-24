@@ -103,8 +103,8 @@ if torch.cuda.is_available():
     model.to(device)
 
 # Print model summary
-print('Name:ARCHANA T')
-print('Register Number:212223240013')
+print('Name:T MOUNISH')
+print('Register Number:212223240098')
 summary(model, input_size=(1, 28, 28))
 # Initialize model, loss function, and optimizer
 model = CNNClassifier()
@@ -123,8 +123,8 @@ def train_model(model, train_loader, num_epochs=3):
             loss.backward()
             optimizer.step()
             running_loss += loss.item()
-        print('Name: ARCHANA T')
-        print('Register Number: 212223240013')
+        print('Name:T MOUNISH')
+        print('Register Number: 212223240098')
         print(f'Epoch [{epoch+1}/{num_epochs}], Loss: {running_loss/len(train_loader):.4f}')
         # Train the model
         train_model(model, train_loader)
@@ -146,15 +146,15 @@ def test_model(model, test_loader):
             all_labels.extend(labels.cpu().numpy())
 
     accuracy = correct / total
-    print('Name: ARCHANA T')
-    print('Register Number: 212223240013')
+      print('Name:T MOUNISH')
+    print('Register Number:212223240098 ')
     print(f'Test Accuracy: {accuracy:.4f}')
 
     # Compute confusion matrix
     cm = confusion_matrix(all_labels, all_preds)
     plt.figure(figsize=(8, 6))
-    print('Name:ARCHANA T')
-    print('Register Number:212223240013 ')
+    print('Name:T MOUNISH')
+    print('Register Number:212223240098 ')
     sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', xticklabels=test_dataset.classes, yticklabels=test_dataset.classes)
     plt.xlabel('Predicted')
     plt.ylabel('Actual')
@@ -162,8 +162,9 @@ def test_model(model, test_loader):
     plt.show()
 
     # Print classification report
-    print('Name:ARCHANA T')
-    print('Register Number:212223240013')
+    
+    print('Name:T MOUNISH')
+    print('Register Number:212223240098 ')
     print("Classification Report:")
     print(classification_report(all_labels, all_preds, target_names=test_dataset.classes))
 # Evaluate the model
